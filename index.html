@@ -19,9 +19,34 @@
 	    <!-- Custom Style sheet -->
 	    <link href="css/custom.css" rel="stylesheet">
 	    
+	    <!---------------------------COPY & PASTE THESE TWO SCRIPT TAGS INTO HEAD------------------------->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	    
+	    
 	</head>
 
 	<body id="page-top" class="index">
+		
+		<!---------------------------COPY THIS RIGHT AFTER THE OPENING BODY TAG. DON'T PUT IT INSIDE ANY OTHER TAGS------------------------->
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				    <div class="modal-header">
+				        <button type="button" class="close" id="back" aria-hidden="true">X</button>
+				        <h4 id="modal-title" style="text-align:center">Project Description</h4>
+				    </div>
+				    <div class="modal-body">
+						<div id="modal-description">
+					        <!--<p>Description Here</p>-->
+						</div>
+								
+				    </div>
+				</div>
+			</div>
+		</div><!-------------------------END OF MODAL----------------------->
+		
 	    <!-- Navigation -->
 	    <nav class="navbar navbar-default navbar-fixed-top">
 	        <div class="container">
@@ -261,7 +286,9 @@ Rem et aut aut endae odiaerfero dus doluptatibus ressimil inctiun totatur, odiae
 </svg>
 
 							<p>Added support for several IPP printing attributes by developing upstream code for the backend of the GTK print dialog within Linux.</p>
-							<a class="btn btn-success" href="#" target="_blank" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> View Code </a>
+								<!-----------------------------ADD THESE NEXT TWO TAGS (A & BUTTON) TO EACH PROJECT -- THESE ARE THE TWO BUTTONS (VIEW CODE & VIEW DESCRIPTION). VIEW DESCRIPTION TRIGGERS MODAL --------------------------------->
+							<a class="btn btn-success" href="#" target="_blank" role="button"alt="View Code"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+							<button class="btn btn-success description-btn"  data-toggle="modal" data-target="#myModal" alt="View Description"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></button>
 						</div>
 					</div><!-- /.col-lg-4--> 
 					
@@ -504,52 +531,124 @@ Rem et aut aut endae odiaerfero dus doluptatibus ressimil inctiun totatur, odiae
 
 		
 
-	
 
 
-		 <!-- Projects Section -->
-		<section id="skills" class="">
+ <!------------------------------------------------ SKILLS SECTION (TO CHANGE THE BARS: CHANGE WIDTH TO DESIRED PERCENT && MATCH PERCENT IN SPAN TAG TO DESIRED WIDTH). DONT FORGET TO ADD A SKILLS BUTTON TO NAME-------------------------------------------------->
+		<section id="skills" class="dark-bg">
 			<hr>
-			<!-- Projects
+			<!-- Skills
 		    ================================================== -->
-		    <div class="container marketing">
-				<div class="row">
-					<h1 class="title">Ventures</h1>
-					<!--Proj 1-->
-					<div class="col-lg-4">
-						<div class="">
-							<h2 class="title">Company One</h2>
-							
-							<p>Agnimus sitem ipiditinctur sitaquo vidus duscitiaes explibu scimus dit verit rem qui natur, acia veliqui aliquos ex erferum que verisquo moditio voluptiurem ut quis eatecer rovita alibustius.</p>
-							<a class="btn btn-success" href="#" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> View Code</a>
-						</div>
-					</div><!-- /.col-lg-4-->
-					
-					<!--Proj 2-->
-					<div class="col-lg-4">
-						<div class="">
-							<h2 class="title">Company Two</h2>
-						
-							<p>Agnimus sitem ipiditinctur sitaquo vidus duscitiaes explibu scimus dit verit rem qui natur, acia veliqui aliquos ex erferum que verisquo moditio voluptiurem ut quis eatecer rovita alibustius, ommodit atusam eum faccum quis eriorem atio eatius auta sit maiost labor reperchit volorum con etures mi, acepudae iniende nis quas ea veritatqui isi omnis adis endiand ipienianit alignam fuga.Agnimus sitem ipiditinctur sitaquo vidus duscitiaes explibu scimus dit verit rem qui natur, acia veliqui aliquos ex erferum que verisquo moditio voluptiurem ut quis eatecer rovita alibustius, ommodit atusam eum faccum quis eriorem atio eatius auta sit maiost labor reperchit volorum con etures mi, acepudae iniende nis quas ea veritatqui isi omnis adis endiand ipienianit alignam fuga.</p>
-							<a class="btn btn-success" href="#" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> View Code </a>
-						</div>
-					</div><!-- /.col-lg-4--> 
-					
-					<!--Proj 3-->
-					<div class="col-lg-4">
-						<div class="">
-							<h2 class="title">Company 3</h2>
-							
-							<p>Agnimus sitem ipiditinctur sitaquo vidus duscitiaes explibu scimus dit verit rem qui natur, acia veliqui aliquos ex erferum que verisquo moditio voluptiurem ut quis eatecer rovita alibustius, ommodit atusam eum faccum quis eriorem atio eatius auta sit maiost labor reperchit volorum con etures mi, acepudae iniende nis quas ea veritatqui isi omnis adis endiand ipienianit alignam fuga. </p>
-							<a class="btn btn-success" href="#" role="button"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> View Code</a>
-						</div>
-					</div><!-- /.col-lg-4-->	
-				</div><!-- /.row-->
+		    <div class="container marketing p-bars">
+				<h1 class="title" style="color: white">Skills</h1>
 				
+				<!--Language Progress Bars-->
+				<div class="languages">
+					<h3>Languages</h3>
+					
+					<!--Java Bar-->
+					<div class="bar">
+						<p>Java</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 92%;"><span class="sr-only">92% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--Python Bar-->
+					<div class="bar">
+						<p>Python</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 66%"><span class="sr-only">66% Complete (success)</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--C Bar-->
+					<div class="bar">
+						<p> C </p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><span class="sr-only">95% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--X86-64 Assembly Bar-->
+					<div class="bar">
+						<p> X86-64 Assembly </p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><span class="sr-only">95% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--C Bar-->
+					<div class="bar">
+						<p> C# </p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><span class="sr-only">95% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--HTML Bar-->
+					<div class="bar">
+						<p> HTML </p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><span class="sr-only">95% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--CSS Bar-->
+					<div class="bar">
+						<p> CSS</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 85%"><span class="sr-only">85% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--JavaScript Bar-->
+					<div class="bar">
+						<p> JavaScript</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">10% Complete</span></div>
+						</div>
+					</div><!--/.bar-->	
+				</div><!--/.languages-->
 				
-		    </div><!--/.container marketing-->
-	    </section><!--/.software-->
+				<!--Application Progress Bars-->
+				<div class="applications">	
+					<h3 style = "color:white"> Applications </h3>
+					
+					<!--Unity Bar-->
+					<div class="bar">
+						<p>Unity</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"><span class="sr-only">92% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
 
+					<!--Illustrator Bar-->
+					<div class="bar">
+						<p>Illustrator</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">92% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--Photoshop-->
+					<div class="bar">
+						<p>Photoshop</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%"><span class="sr-only">76% Complete (success)</span></div>
+						</div>
+					</div><!--/.bar-->
+					
+					<!--Indesign-->
+					<div class="bar">
+						<p> InDesign</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">95% Complete</span></div>
+						</div>
+					</div><!--/.bar-->
+				</div>	<!--/.applications-->
+				
+			</div><!--/.container marketing-->
+	    </section><!--/.SKILLS-->
 
 
 
@@ -661,6 +760,9 @@ Rem et aut aut endae odiaerfero dus doluptatibus ressimil inctiun totatur, odiae
 	    ================================================== -->
 	    <!-- Placed at the end of the document so the pages load faster -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    
+	    <!------------------------------LINK TO JS FILE THAT HANDLES MODAL FUNCTIONALITY; PASTE IT AT THE END OF THE BODY SECTION------------------------------------------>
+		<script src="js/descriptions.js"></script>
 	   
 	</body>
 
