@@ -230,6 +230,39 @@
 }
 
 
+/*Skills Section*/
+.progress{ 
+	width: 60%;
+	margin-left: 5%;
+	margin-right: 15%;
+	float: right;
+	color: white;
+}
+.progress-bar{ 
+	background-color: #0085ff;
+}
+
+.p-bars p{ 
+	float: left;
+	margin-left: 100px;
+	font-size: 1.5em;
+	color:white;
+}
+
+.bar{ 
+	float: none;
+	clear: both;
+	
+}
+
+.languages{ 
+	margin-bottom: 75px;
+}
+.applications{ 
+	margin-bottom: 75px;
+}
+
+/**Footer Section*/
 .footer{ 
 	background-color: black;
 	color: white;
