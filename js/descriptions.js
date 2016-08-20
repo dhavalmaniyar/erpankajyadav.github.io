@@ -54,7 +54,7 @@ desBtns[0].addEventListener("click", function(){
 	list.appendChild(list3);
 	
 	var list4 = document.createElement("li");
-	list4.innerHTML="Finally, because my task was very specific, it was hard to find reading material online to answer many of the question I had. This is where both Till and Marek came in handy!";
+	list4.innerHTML="Finally, because my task was very specific, it was hard to find reading material online to answer many of the questions I had. This is where both Till and Marek came in handy!";
 	list.appendChild(list4);
 	
 	var header5 = document.createElement("h4");
