@@ -47,6 +47,7 @@
   right: 0;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .jumbotron{ 
@@ -190,6 +191,7 @@
 .dark-bg{ 
 	background-color: #061826;
 	color: #061826;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .project{ 
@@ -202,6 +204,7 @@
 	text-align: center;
 	margin-top: 45px;
 	padding-bottom: 45px;
+	font-family: 'Ubuntu', sans-serif;
 }
 .marketing h1{ 
 	margin-bottom: 30px;
@@ -237,6 +240,7 @@
 	margin-right: 15%;
 	float: right;
 	color: white;
+	font-family: 'Ubuntu', sans-serif;
 }
 .progress-bar{ 
 	background-color: #0085ff;
@@ -268,10 +272,12 @@
 	color: white;
 	bottom:0;
 	height: 105px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .footer p{ 
 	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .footer a{ 
