@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    
+	    <title>Kevin Naughton</title>
+	
+		<!--Fonts-->
+		<link href="https://www.google.com/fonts/specimen/Playfair+Display" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+		
+	    <!-- Bootstrap -->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+	    
+	    <!-- Custom Style sheet -->
+	    <link href="css/custom.css" rel="stylesheet">
+	    
+	</head>
+
+	<body id="" class="index" >
+	    <!-- Navigation -->
+	    <nav class="navbar navbar-default navbar-fixed-top">
+	        <div class="container">
+	            <!-- Brand and toggle get grouped for better mobile display -->
+	            <div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="index.html">Kevin Naughton Jr.</a>
+	            </div>
+	
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li class="page-scroll">
+	                        <a href="index.html">About</a>
+	                    </li>
+	                    <li class="page-scroll">
+	                        <a href="KevinDNaughtonJrResume.pdf" target="_blank">Resume</a>
+	                    </li>
+	                    
+	                    <li class="page-scroll">
+	                        <a href="index.html">Projects</a>
+	                    </li>
+	                   
+	                    <li class="page-scroll">
+	                        <a href="index.html">Contact</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container-fluid -->
+	    </nav>
+	
+	    <!-- Header -->
+	    <header>
+	       <div class="content" style="margin-left:20%; margin-right:20%;">
+				<div class="jumbotron">
+					<div class="row" id="about-row">
+					<div class="col-lg-12">
+						<div class="about-content">
+							<h2 class="title" style ="text-align:center">Linux's GTK Print Dialog</h2>
+							<p>During my Google Summer of Code Project with the Linux Foundation, I was responsible for adding support for printing attributes for printers that do not have postscript printer description files.</p> 
+						</div>
+					</div><!-- /.col-lg-4-->
+			        
+					</div>
+				</div>
+			</div>
+	    </header>
+	
+	    		
+		<section id="" class="dark-bg">
+			<!-- Projects
+		    ================================================== -->
+		    <div class="container marketing">
+				<h2 class="title" style="color: white;">Objectives</h2>
+				<div class="row" style="margin-top: 50px;">
+					<div class="col-lg-4">
+						<div class="project">
+							<h4 class="title" style="text-transform: none;">Set up the option panel of the dialog based on the found IPP options and choices and when printing.</h4>
+						</div>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-4">
+						<div class="project">
+							<h4 class="title" style="text-transform: none;">Extend the functionality of the GTK print dialog (the most used print dialog for desktop applications under Linux) which recognizes such print queues and polls the printer's capability list directly from the printer via IPP.</h4>
+						</div>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-4">
+						<div class="project">
+							<h4 class="title" style="text-transform: none;">Send the job along with the user's settings and also static capabilities (like unprintable margins).</h4>
+						</div>
+					</div><!-- /.col-lg-4-->	
+				</div><!-- /.row-->				
+		    </div><!--/.container marketing-->
+	    </section><!--/.-->
+	    		
+	     <div class="content" style="margin-left:20%; margin-right:20%; margin-top:-50px; margin-bottom: 50px;">
+				
+					<div class="row" id="about-row">
+					<div class="col-lg-12">
+						<div class="about-content">
+							<h2 class="title" style ="text-align:center; margin-top:25px;">Impact</h2>
+							<p>The reason the work I did is important because the world of printing is changing. Until recently, the way we access printers is through CUPS, the Common Unix Printing System, a system first introduced by Mike Sweet in 2000. This system allows printers and computers to communicate through postscript printer description files and printer model specific drivers. The problem with this, especially in mobile devices, is these files and drivers can occupy megabytes of memory space in computers. Today, in 2016, we use new technology, Internet Printing Protocol (IPP) Everywhere Printing, to avoid this unnecessary storage. IPP Everywhere allows printers to supply all its respective capabilities by itself by understanding a small set of page descriptor languages (PDLs). By creating this backend for the Gimp Tool Kit (GTK) and adding support for these printing attributes, I am helping further the transition from CUPS printing to IPP Everywhere printing within the most used print dialog for desktop applications under Linux.</p> 
+						</div>
+					</div><!-- /.col-lg-4-->
+			        
+					</div>
+				
+			</div>
+			
+			<section id="" class="dark-bg">
+			<!-- Projects
+		    ================================================== -->
+		    <div class="container marketing" style="">
+				<h2 class="title" style="color: white; margin-top:50px;">Difficulties</h2>
+				<div class="row" style="margin-top: 50px; text-align:left;">
+					<div class="col-lg-3">
+						<div class="project">
+							<p>Setting up my environment also proved to be a challenge having never dealt with GTK or printers.</p>
+						</div>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-3">
+						<div class="project">
+							<p>One of the biggest difficulties I had was limited prior experience working with printers and very limited knowledge about printers in general. Luckily, with the help of my mentors, Till Kamppeter and Marek Kasik, along with a lot of reading, I was able to learn a lot about printers and how they work.</p>						
+						</div>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-3">
+						<div class="project">
+							<p>Another difficulty I ran into was testing. In order to test my code, I needed to install a virtual machine within my local machine to create a virtual printer. Once installed, I could then recompile and reinstall my edited GTK code to interact with the newly updated print dialog. Working within two environments proved to be a bit messy and confusing at times.</p>
+						</div>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-3">
+						<div class="project">
+							<p>Finally, because my task was very specific, it was hard to find reading material online to answer many of the questions I had. This is where both Till and Marek came in handy!</p>
+						</div>
+					</div><!-- /.col-lg-4-->	
+				</div><!-- /.row-->				
+		    </div><!--/.container marketing-->
+	    </section><!--/.-->
+	    
+	    
+	    <section id="">
+			<!-- Projects
+		    ================================================== -->
+		    <div class="container marketing">
+				<h2 class="title">Tools</h2>
+				<div class="row" style="margin-top: 50px;">
+					<div class="col-lg-2">
+						<h4 class="title">C</h4>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-2">
+						<h4 class="title">GTK Library</h4>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-2">
+						<h4 class="title">Terminal</h4>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-2">
+						<h4 class="title">GTK3-Demo</h4>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-2">
+						<h4 class="title">Virtual Machine</h4>
+					</div><!-- /.col-lg-4-->
+					
+					<div class="col-lg-2">
+						<h4 class="title">Virtual Printer</h4>
+					</div><!-- /.col-lg-4-->	
+				</div><!-- /.row-->				
+		    </div><!--/.container marketing-->
+	    </section><!--/.-->
+	    
+	    <section id="" class="dark-bg">
+			<!-- Projects
+		    ================================================== -->
+		    <div class="container marketing" style="">
+				<h2 class="title" style="color: white; margin-top:50px;">Next Steps</h2>
+				<div class="row" style="margin-top: 50px; text-align:left;">
+					<div class="col-lg-8" style="margin-left:20%; margin-right:20%;">
+						<p class="project">Because there are many printing attributes, the next step for this project is simple: continue adding support for additional printing attributes in order to further transition from CUPS printing to IPP Everywhere printing.</p>
+					</div><!-- /.col-lg-4-->	
+				</div><!-- /.row-->				
+		    </div><!--/.container marketing-->
+	    </section><!--/.-->
+	
+		<!-- Footer Section -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+				<!--Placeholder Section-->
+				<div class="col-md-4"></div>
+				<!-- CR Section -->
+				<div class="col-md-4"> 
+				  <p>
+					  <br>Copyright &copy; 2016 Kevin Naughton Jr. 
+				  </p>
+			  </div><!--.col-md-4 (cr section) -->
+					
+				<!--Icons Section-->
+				<div class="col-md-4">
+						<!--Icons-->
+						<div class="sm-icon">
+							<!--Instagram Icon-->
+							<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="34.5px" height="33.167px" viewBox="0 0 54.5 53.167" enable-background="new 0 0 54.5 53.167" xml:space="preserve">
+							<circle fill="none" stroke="#FF528F" stroke-width="2" stroke-miterlimit="10" cx="27.029" cy="25.966" r="23.75"/>
+							<path fill="#FF528F" d="M36.325,11.624H17.731c-2.782,0-5.045,2.263-5.045,5.045v18.593c0,2.783,2.263,5.044,5.045,5.044h18.593
+								c2.783,0,5.046-2.261,5.046-5.044V16.669C41.371,13.887,39.108,11.624,36.325,11.624z M33.17,14.571c0-0.477,0.39-0.867,0.867-0.867
+								h3.306c0.478,0,0.868,0.39,0.868,0.867v3.305c0,0.478-0.391,0.868-0.868,0.868h-3.306c-0.478,0-0.867-0.39-0.867-0.868V14.571
+								L33.17,14.571z M32.24,25.704c0,2.852-2.319,5.173-5.172,5.173c-2.852,0-5.172-2.319-5.172-5.173c0-2.852,2.321-5.172,5.172-5.172
+								C29.917,20.532,32.24,22.853,32.24,25.704z M38.252,35.262c0,1.062-0.865,1.928-1.928,1.928H17.731
+								c-1.062,0-1.927-0.865-1.927-1.928V21.99h3.854c-0.562,1.119-0.882,2.379-0.882,3.714c0,4.572,3.72,8.292,8.291,8.292
+								c4.571,0,8.289-3.72,8.289-8.292c0-2.001-0.711-3.838-1.896-5.272h4.792V35.262z"/>
+						</svg>
+					</a>
+							
+							<!--facebook Icon-->
+							<a href="#">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							width="34.5px" height="33.167px" viewBox="0 0 54.5 53.167" enable-background="new 0 0 54.5 53.167" xml:space="preserve">
+							<path fill="#FF528F" d="M83.6-39.091v9.96c0,0.861,0.049,1.494,0.147,1.897c0.198,0.82,0.651,1.089,1.164,1.513
+								c0.961,0.794,4.006,1.53,6.116-0.219l0.293,3.352c-0.876,1.041-5.754,1.82-8.05,1.424c-1.546-0.27-2.921-0.445-4.049-1.336
+								c-1.073-0.846-1.703-2.159-1.889-3.942c-0.057-0.485-0.082-1.487-0.082-3.004v-9.645l-2.83,0.041v-2.841
+								c1.986-0.208,5.535-2.696,6.234-7.946h2.942l0.073,7.438l6.41,0.041l-0.074,3.309L83.6-39.091L83.6-39.091z"/>
+							<circle fill="none" stroke="#FF528F" stroke-width="2" stroke-miterlimit="10" cx="82.871" cy="-35.448" r="23.75"/>
+							<circle fill="none" stroke="#FF528F" stroke-width="2" stroke-miterlimit="10" cx="28.37" cy="-35.448" r="23.75"/>
+							<circle fill="none" stroke="#FF528F" stroke-width="2" stroke-miterlimit="10" cx="27.37" cy="27.302" r="23.75"/>
+							<path fill="#FF528F" d="M38.983-50.962H20.39c-2.782,0-5.045,2.263-5.045,5.045v18.594c0,2.783,2.263,5.044,5.045,5.044h18.593
+								c2.783,0,5.046-2.261,5.046-5.044v-18.594C44.029-48.699,41.766-50.962,38.983-50.962z M35.829-48.015
+								c0-0.477,0.39-0.867,0.867-0.867h3.306c0.478,0,0.868,0.39,0.868,0.867v3.305c0,0.478-0.391,0.868-0.868,0.868h-3.306
+								c-0.478,0-0.867-0.39-0.867-0.868V-48.015L35.829-48.015z M34.898-36.882c0,2.852-2.319,5.174-5.172,5.174
+								c-2.852,0-5.172-2.32-5.172-5.174c0-2.852,2.321-5.172,5.172-5.172C32.576-42.054,34.898-39.734,34.898-36.882z M40.911-27.324
+								c0,1.062-0.865,1.928-1.928,1.928H20.39c-1.062,0-1.927-0.865-1.927-1.928v-13.272h3.854c-0.562,1.118-0.882,2.378-0.882,3.713
+								c0,4.572,3.72,8.292,8.291,8.292c4.571,0,8.289-3.72,8.289-8.292c0-2.001-0.711-3.838-1.896-5.272h4.792V-27.324z"/>
+							<path fill="#FF528F" d="M29.417,18.758c0.146-0.158,0.492-0.245,0.967-0.245c0.68,0,1.404,0.088,2.15,0.268l0.867,0.207l1.008-5.195
+								l-0.73-0.23c-2.963-0.93-6.378-0.97-8.469,0.165c-1.098,0.595-1.867,1.392-2.288,2.369c-0.396,0.919-0.589,2.219-0.589,3.983v0.599
+								h-2.842v5.738h2.842v15.316h6.828V26.417h3.824V20.68h-3.824v-0.51C29.161,19.065,29.387,18.787,29.417,18.758z"/>
+						</svg>
+					</a>
+						</div>
+					</div><!--/.col-md-4 (icons section)-->
+			</div><!--/.row (footer)-->
+			</div><!--/.container-->
+		</div><!--/.footer-->
+		
+		</div>
+	    
+	    <!-- jQuery -->
+	    <script src="js/jQuery.js"></script>
+	
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+	
+		<!-- Bootstrap core JavaScript
+	    ================================================== -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	   
+	</body>
+
+ 
+</html>
